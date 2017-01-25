@@ -10,7 +10,7 @@ var LibrarySchema = new Schema({
 	occupants: {type: Number, required: true 	
 });
 
-LibrarySchema.methods.compareName = function(name) {
+LibrarySchema.meth      ods.compareName = function(name) {
 	var library = this;
 	return name.localeCompare(library.name) == 0;
 };
